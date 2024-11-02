@@ -7,9 +7,9 @@ import { useState } from 'react'
 
 const Checkout = () => {
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const handleClick = (index) => {
+  const handleClick = (index:number) => {
     setActiveIndex(index);
   };
 
